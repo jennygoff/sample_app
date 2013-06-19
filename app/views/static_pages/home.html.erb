@@ -6,8 +6,14 @@
     <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
     sample application.
   </h2>
-
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+	<p>
+		<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+	</p>
+ 
+ 	<p> 
+  		<%= link_to "Test Chardin!", "#", class: "btn btn-large btn-primary",  data: {toggle:"chardinjs", intro: "This button toggles the overlay, you can click it even when the overlay is visible", position:"left"}%>
+	</p>
 </div>
 
 <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+
