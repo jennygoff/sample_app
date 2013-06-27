@@ -1,5 +1,5 @@
 <div class="center hero-unit">
-  <h1>Welcome to the Sample App</h1>
+  <h1 class="text-error" data-intro="Built thanks to Mike's Super Duper Help!" data-position="top">Welcome to the Jenny's Very First Rails App</h1>
 
   <h2>
     This is the home page for the
@@ -7,11 +7,11 @@
     sample application.
   </h2>
 	<p>
-		<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+		<%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-inverse", data: {toggle:"chardinjs", intro: "If you press this button, you can put your name on a very important list", position:"right"} %>
 	</p>
  
  	<p> 
-  		<%= link_to "Test Chardin!", "#", class: "btn btn-large btn-primary",  data: {toggle:"chardinjs", intro: "This button toggles the overlay, you can click it even when the overlay is visible", position:"left"}%>
+  		<%= link_to "Help me!", "#", id: "chardinbutton", class: "btn btn-large btn-block btn-info",  data: {toggle:"chardinjs", intro: "This button toggles the overlay, you can click it even when the overlay is visible", position:"left"}%>
 	</p>
 </div>
 

@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "_color-me-sass";
 
 /* mixins, variables, etc. */
 
@@ -54,12 +55,13 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $grayLight;
+  color: $pinkBoot;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  color: $pinkBoot;
 }
 
 
@@ -166,4 +168,10 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+.hero-unit {
+  h1 {
+    color: $purpleBoot;
+  }
 }

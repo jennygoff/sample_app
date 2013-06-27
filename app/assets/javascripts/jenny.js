@@ -1,7 +1,8 @@
 (function() {
   $(function() {
-    $('body').chardinJs('start');
-     
+    $("#chardinbutton").click(function(){
+      $('body').chardinJs('toggle')
+    });
   });
  
 }).call(this);
